@@ -1,0 +1,136 @@
+@import '../../foundations/var.scss';
+
+/*========================
+ハンバーガーメニュー
+========================*/
+.g-hamb-btn__header {
+    width: 4rem;
+    height: 100%;
+}
+  
+.c-hamb__btn {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+  
+    @include spm {
+      display: none;
+    }
+  
+    span {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      position: relative;
+      transition: ease .4s;
+      display: block;
+  
+      &:nth-child(1) {
+        top: 0;
+      }
+  
+      &:nth-child(2) {
+        margin: 1rem 0;
+      }
+  
+      &:nth-child(3) {
+        top: 0;
+      }
+    }
+  
+    &.active span {
+      &:nth-child(1) {
+        top: 0.5rem;
+        transform: rotate(45deg);
+      }
+  
+      &:nth-child(2) {
+        opacity: 0;
+      }
+  
+      &:nth-child(3) {
+        top: -1.8rem;
+        transform: rotate(-45deg);
+      }
+    }
+}
+
+
+/*===========================
+もっと見るボタン
+===========================*/
+.c-more__btn {
+    display: block;
+    font: var(--font-inter);
+    font-weight: 40rem;
+    font-size: 1.6rem;
+  
+    &[data-order="1"] {
+      padding-top: 5.1rem;
+    }
+  
+    &[data-order="2"] {
+      text-align: center;
+      padding-top: 4.3rem;
+    }
+  
+    &[data-order="3"] {
+      text-align: center;
+      padding-top: 5.1rem;
+    }
+
+    @include sp {
+      &[data-order="1"] {
+        padding-top: 3.2rem;
+      }
+
+      &[data-order="2"] {
+        padding-top: 4.3rem;
+      }
+  
+      &[data-order="3"] {
+        padding-top: 2.6rem;
+      }
+    }
+}
+
+.c-more__btn__link {
+    display: inline-block;
+    position: relative;
+    padding-right: 4.6rem;
+    padding-left: 1.85rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid;
+  
+    span {
+      font: var(--font-inter);
+      font-size: 1.6rem;
+      font-weight: 40rem;
+    }
+  
+    i {
+      background-color: black;
+      width: 20px;
+      aspect-ratio: 1/1;
+      border-radius: 999px;
+      position: absolute;
+      top: 40%;
+      left: 75%;
+      right: 0;
+      transform: translateY(-50%);
+  
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-top: 4px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 8px solid white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+}

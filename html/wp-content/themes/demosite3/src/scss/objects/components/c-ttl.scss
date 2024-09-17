@@ -1,0 +1,95 @@
+@import '../../foundations/var.scss';
+
+
+/*====================
+header
+====================*/
+.c-home__header__ttl {
+    color: black;
+    margin-left: 3.7rem;
+    font: var(--font-inter);
+    font-size: 2.2rem;
+    z-index: 9999;
+  
+    @include spl {
+      margin-left: 0;
+    }
+  
+    @include sp {
+      margin-left: 0;
+    }
+}
+
+
+/*=====================
+about
+=====================*/
+.c-home__about__ttl {
+    text-align: center;
+    font: var(--font-outfit);
+    font-size: 2.4rem;
+  
+    @include sp {
+      padding: 0;
+    }
+}
+.c-content__about__ttl {
+    text-align: left;
+    padding-bottom: 1.6rem;
+    font: var(--font-inter);
+    font-size: 3.6rem;
+  
+    @include sp {
+      padding-bottom: 10px;
+      font-size: 2.4rem;
+    }
+}
+
+
+/*=====================
+works
+=====================*/
+.c-home__works__ttl {
+    text-align: center;
+    padding-bottom: 3.3rem;
+    font: var(--font-outfit);
+    font-size: 2.4rem;
+  
+    @include sp {
+      padding-bottom: 3.5rem;
+    }
+}
+
+
+/*=======================
+news
+=======================*/
+.c-home__news__ttl {
+    text-align: center;
+    padding-bottom: 5.1rem;
+    font: var(--font-outfit);
+    font-size: 2.4rem;
+
+    @include sp {
+      padding-bottom: 2.6rem;
+    }
+}
+
+.c-nav__news__ttl {
+  text-align: left;
+  font: var(--font-outfit);
+  font-size: 2.4rem;
+  color: #3c3c3c;
+  padding-bottom: 1.74rem;
+}
+
+
+/*========================
+footer
+=========================*/
+.c-home__footer__ttl {
+    display: block;
+    padding-top: 3.7rem;
+    font: var(--font-inter);
+    font-size: 2.2rem;
+}

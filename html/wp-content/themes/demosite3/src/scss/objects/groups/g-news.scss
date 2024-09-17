@@ -1,0 +1,70 @@
+@import '../../foundations/var.scss';
+
+.g-home__news {
+  margin: 0 auto;
+  margin-top: 10.4rem;
+
+
+  @include sp {
+    margin-top: 7.3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.g-list__news {
+  flex: 1 1 auto;
+  padding-top: 0.34rem;
+  text-align: center;
+
+  @include sp {
+    padding-top: 0;
+  }
+}
+
+.g-list__news__item {
+  text-align: center;
+}
+
+.g-news__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.7rem;
+
+  @include mv-news {
+    display: inline;
+    padding-bottom: 2rem;
+  }
+}
+
+.g-list__nav__news {
+  @include mv-news {
+    display: flex;
+    gap: 8rem;
+  }
+
+  @include sp {
+    padding-top: 4rem;
+    gap: 3rem;
+  }
+}
+
+.g-pagenation {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+
+  @include mv-news {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  @include sp {
+    padding-bottom: 5rem;
+  }
+}
+
+
+
+
+

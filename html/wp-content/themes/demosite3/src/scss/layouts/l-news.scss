@@ -1,0 +1,26 @@
+@import '../foundations/var.scss';
+
+.l-home__news {
+    margin: 0 auto;
+    margin-top: 10.4rem;
+    padding-left: 15.8rem;
+    padding-right: 16rem;
+
+    @media screen and (max-width: 1020px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include sp {
+      margin-top: 7.3rem;
+      padding-left: 0;
+      padding-right: 0
+    }
+  }
+
+.l-news__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1rem;
+}

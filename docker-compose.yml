@@ -1,0 +1,29 @@
+version: '3.8'
+ 
+services:
+ 
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./html:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: bs223017_wp1
+      WORDPRESS_DB_USER: bs223017_wp1
+      WORDPRESS_DB_PASSWORD: ufdszq3kdt
+    depends_on:
+      - db
+ 
+  db:
+    image: mariadb:10.5
+    restart: always
+    environment:
+      MYSQL_DATABASE: bs223017_wp1
+      MYSQL_USER: bs223017_wp1
+      MYSQL_PASSWORD: ufdszq3kdt
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d

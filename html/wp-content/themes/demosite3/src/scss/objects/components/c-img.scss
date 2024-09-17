@@ -1,0 +1,60 @@
+@import '../../foundations/var.scss';
+
+/*====================
+header
+====================*/
+.c-item__header__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1280/629;
+    position: relative;
+  
+    @include spl {
+      aspect-ratio: 393/629;
+    }
+  
+    img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      @include spl {
+        text-align: center;
+        object-fit: cover;
+      }
+    }
+}
+
+
+/*========================
+about
+========================*/
+.c-img__about__item {
+    max-width: 55rem;
+    width: 100%;
+}
+
+
+/*=========================
+works
+=========================*/  
+.c-works__nav__item__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 250/176;
+    position: relative;
+  
+    img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+}

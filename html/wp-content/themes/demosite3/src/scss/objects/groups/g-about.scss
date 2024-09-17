@@ -1,0 +1,47 @@
+@import '../../foundations/var.scss';
+
+.g-about__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5.4rem;
+  
+    @include pcm {
+      flex-direction: column-reverse;
+      padding-top: 0;
+    }
+     
+    @include sp {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+  }
+  
+.g-content__about {
+    padding-top: 5.1rem;
+    padding-right: 5rem;
+  
+    @include sp {
+      padding-top: 1.4rem;
+      padding-right: 0;
+    }
+  }
+
+.g-home__img__about {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+  
+    @include pcm {
+      margin-top: 2.4rem;
+    }
+    
+    @include spl {
+      display: inline;
+      text-align: center;
+      margin-top: 2.4rem;
+    }
+}

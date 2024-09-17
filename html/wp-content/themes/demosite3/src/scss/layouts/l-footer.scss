@@ -1,0 +1,26 @@
+@import '../foundations/var.scss';
+
+.l-home__footer {
+    margin-top: 14rem;
+    padding-bottom: 7.8rem;
+    position: relative;
+
+    @include spl {
+      margin-top: 9.3rem;
+      padding-bottom: 1.4rem;
+    }
+  
+    &::after {
+      content: '';
+      display: block;
+      background-color: #d9d9d9;
+      width: 100vw;
+      height: 100%;
+      margin-left: calc(((100vw - 100%) / 2) * -1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  

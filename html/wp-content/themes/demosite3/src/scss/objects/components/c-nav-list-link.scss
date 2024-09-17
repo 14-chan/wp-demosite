@@ -1,0 +1,117 @@
+@import '../../foundations/var.scss';
+
+/*======================
+header
+======================*/
+.c-list__header__item {
+    font: var(--font-inter);
+    font-size: 1.4rem;
+  
+    &:last-child {
+      margin-right: 4.1rem;
+    }
+  
+    @include spl {
+      font: var(--font-outfit);
+      font-size: 2.4rem;
+  
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+  
+      &:last-child {
+        display: none;
+      }
+    }
+}
+  
+.c-nav__header__link {
+    display: block;
+    height: 8rem;
+    line-height: 8rem;
+    margin: 0 auto;
+  
+    @include spl {
+      color: #000;
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+    }
+}
+
+
+/*======================
+about
+======================*/
+.c-list__main__txt__about {
+    font: var(--font-inter);
+    font-size: 1.6rem;
+  
+    @include sp {
+      display: inline;
+    }
+}
+
+
+/*========================
+works
+========================*/
+.c-works__nav__item__name {
+    text-align: center;
+    padding-top: 1.6rem;
+    font: var(--font-outfit);
+    font-size: 1.4rem;
+  
+    @include sp {
+      padding-top: 1.2rem;
+    }
+}
+
+
+/*=========================
+news
+=========================*/
+.c-list__item__news {
+  font: var(--font-outfit);
+  font-size: 1.4rem;
+  color: #3c3c3c;
+
+  &:first-child {
+    margin-bottom: 3.1rem;
+  }
+  &:nth-child(2) {
+    margin-bottom: 2.4rem;
+  }
+  &:nth-child(3) {
+    margin-bottom: 2.4rem;
+  }
+
+  @include mv-news {
+    margin-bottom: 0;
+    display: block;
+    height: 4rem;
+    line-height: 4rem;
+  }
+}
+
+
+/*=========================
+footer
+=========================*/
+.c-link__footer__item {
+  display: block;
+  margin: 0 auto;
+}
+
+.c-list__item__footer {
+  &:not(first-child) {
+    margin-left: 4.1rem;
+  }
+}
+
+
+.g-card__footer__date {
+  padding-top: 6.1rem;
+  display: block;
+}

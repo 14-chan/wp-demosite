@@ -1,0 +1,39 @@
+@import '../../foundations/var.scss';
+
+.g-footer__inner {
+    display: flex;
+    align-items: center;
+}
+  
+.g-nav__footer {
+    margin: 0 0 0 auto;
+
+    @include spl {
+      display: none;
+    }
+}
+  
+.g-nav__list__footer {
+    display: flex;
+    position: relative;
+    top: 1.8rem;
+    font: var(--font-inter);
+    font-size: 1.4rem;
+
+}
+
+.g-card__footer__date {
+    padding-top: 6.1rem;
+    display: block;
+}
+
+.g-copyright__footer {
+    margin: 0 auto;
+    text-align: right;
+    font: var(--font-inter);
+    font-size: 1.2rem;
+
+    @include spl {
+      padding-top: 5.3rem;
+    }
+}

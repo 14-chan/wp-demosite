@@ -1,0 +1,13 @@
+.l-container {
+    display: block;
+    margin-left: 10rem;
+    margin-right: 10.1rem;
+
+    @include spl {
+      display: block;
+      margin-left: 2.4rem;
+      margin-right: 2.3rem;
+  }
+}
+
+  

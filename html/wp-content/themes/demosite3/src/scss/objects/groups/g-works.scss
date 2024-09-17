@@ -1,0 +1,12 @@
+@import '../../foundations/var.scss';
+
+.g-works__nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.6rem;
+  
+    @include sp {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
+    }
+}

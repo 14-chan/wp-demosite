@@ -1,0 +1,10 @@
+@import '../foundations/var.scss';
+
+.l-home__works {
+  margin-top: 12.3rem;
+
+  @include sp {
+    margin-top: 6.2rem;
+  }
+}
+
