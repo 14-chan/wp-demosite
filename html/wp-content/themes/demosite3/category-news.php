@@ -29,9 +29,9 @@ if ($the_query->have_posts()) :
 ?>
                 <li class="g-list__news__item">
                     <a class="c-card__news" href="<?php the_permalink(); ?>">
-                        <p class="c-card__news__date"><?php echo get_the_date('Y.m.d'); ?></p>
-                        <p class="c-card__news__category"><?php the_title(); ?></p>
-                        <p class="c-card__news__ttl"><?php the_content(); ?></p>                       
+                        <p class="c-card__news__date"><?php the_time('Y.m.d'); ?></p>
+                        <p class="c-card__news__category"><?php $category = get_the_category(); echo $category[1]->cat_name; ?></p>
+                        <p class="c-card__news__ttl"><?php the_title(); ?></p>                       
                     </a>
                 </li>
         <?php // ループ終了
@@ -39,12 +39,14 @@ if ($the_query->have_posts()) :
         else : ?>
             <p>現在表示するニュースはありません。</p>
         <?php endif; ?>
-                    <div class="g-pagenation">
-                        <li class="c-pagenation__pager"><a href="">1</li>
-                        <li class="c-pagenation__pager"><a href="">2</li>
-                        <li class="c-pagenation__pager"><a href="">3</li>
-                        <li class="c-pagenation__pager"><a href="">4</li>
-                    </div>
+                    <?php 
+                        the_posts_pagination(
+                            array(
+                                'show_all' => true,
+                                'prev_next' => false,
+                            )
+                        );
+                    ?>
                 </ul>
             </div>
         </section>

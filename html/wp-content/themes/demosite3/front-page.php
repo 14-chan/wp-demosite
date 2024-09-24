@@ -157,9 +157,9 @@ if ($the_query->have_posts()) :
 ?>
                 <li class="g-list__news__item">
                     <a class="c-card__news" href="<?php the_permalink(); ?>">
-                        <p class="c-card__news__date"><?php echo get_the_date('Y.m.d'); ?></p>
-                        <p class="c-card__news__category"><?php the_title(); ?></p>
-                        <p class="c-card__news__ttl"><?php the_content(); ?></p>                       
+                        <p class="c-card__news__date"><?php the_time('Y.m.d'); ?></p>
+                        <p class="c-card__news__category"><?php $category = get_the_category(); echo $category[1]->cat_name; ?></p>
+                        <p class="c-card__news__ttl"><?php the_title(); ?></p>                       
                     </a>
                 </li>
         <?php // ループ終了
@@ -169,7 +169,7 @@ if ($the_query->have_posts()) :
         <?php endif; ?>
     </ul>
     <div class="c-more__btn" data-order="3">
-        <a class="c-more__btn__link" href="">
+        <a class="c-more__btn__link" href="<?php echo site_url('/category/news/'); ?>">
             <span>もっと見る</span><i></i>
         </a>
     </div>
