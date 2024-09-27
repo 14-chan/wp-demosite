@@ -169,7 +169,7 @@ if ($the_query->have_posts()) :
         <?php endif; ?>
     </ul>
     <div class="c-more__btn" data-order="3">
-        <a class="c-more__btn__link" href="<?php echo site_url('/category/news/'); ?>">
+        <a class="c-more__btn__link" href="<?php echo get_category_link(get_cat_ID('すべて')); ?>">
             <span>もっと見る</span><i></i>
         </a>
     </div>

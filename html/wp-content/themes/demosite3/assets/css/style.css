@@ -1055,9 +1055,14 @@ footer
   --margin-6l: calc(var(--default-margin) * 6);
 }
 
-.c-pagenation__pager {
-  font: var(--font-outfit);
-  font-size: 1.4rem;
+.c-pagination {
+  padding-top: 7rem;
+}
+
+.c-pagination ul {
+  display: flex;
+  justify-content: left;
+  gap: 4rem;
 }
 
 /*レスポンシブ用*/
@@ -1457,10 +1462,6 @@ footer
   .g-pagenation {
     padding-bottom: 5rem;
   }
-}
-
-.g-post__news {
-  margin-top: 10rem;
 }
 
 /*レスポンシブ用*/

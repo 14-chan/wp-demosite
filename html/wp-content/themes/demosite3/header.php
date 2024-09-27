@@ -16,7 +16,7 @@
                     <ul class="g-list__header__nav">
                         <li class="c-list__header__item"><a class="c-nav__header__link" href="<?php echo get_template_directory_uri(); ?>/about__main.html">About</a></li>
                         <li class="c-list__header__item"><a class="c-nav__header__link" href="<?php echo get_template_directory_uri(); ?>/works__main.html">Works</a></li>
-                        <li class="c-list__header__item"><a class="c-nav__header__link" href="<?php echo site_url('/category/news/'); ?>">News</a></li>
+                        <li class="c-list__header__item"><a class="c-nav__header__link" href="<?php echo get_category_link(get_cat_ID('すべて')); ?>">News</a></li>
                         <li class="c-list__header__item"><a class="c-nav__header__link" href="<?php echo get_template_directory_uri(); ?>/contact.html">Contact</a></li>
                     </ul>
                 </nav>

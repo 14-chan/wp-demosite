@@ -1,6 +1,11 @@
 @import '../../foundations/var.scss';
 
-.c-pagenation__pager {
-    font: var(--font-outfit);
-    font-size: 1.4rem;
+.c-pagination {
+    padding-top: 7rem;
+}
+
+.c-pagination ul {
+    display: flex;
+    justify-content: left;
+    gap: 4rem;
 }
