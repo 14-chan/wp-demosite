@@ -158,7 +158,19 @@ if ($the_query->have_posts()) :
                 <li class="g-list__news__item">
                     <a class="c-card__news" href="<?php the_permalink(); ?>">
                         <p class="c-card__news__date"><?php the_time('Y.m.d'); ?></p>
-                        <p class="c-card__news__category"><?php $category = get_the_category(); echo $category[1]->cat_name; ?></p>
+                        <p class="c-card__news__category">
+                        <?php
+                        $categories = get_the_category(); // カテゴリーの配列を取得
+                        if (!empty($categories)) {
+                            foreach ($categories as $category) {
+                                if ($category->cat_name !== 'すべて') { // "すべて"カテゴリーを除外
+                                    echo esc_html($category->cat_name); // 他のカテゴリーを表示
+                                    break; // 最初に見つかったカテゴリーでループ終了
+                                }
+                            }
+                        }
+                        ?>
+                        </p>
                         <p class="c-card__news__ttl"><?php the_title(); ?></p>                       
                     </a>
                 </li>
