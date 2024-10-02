@@ -1,6 +1,12 @@
 @import '../../foundations/var.scss';
 
 .g-contactform {
-    margin-left: 23.7rem;
-    margin-right: 23.7rem;
+    margin: 0 auto;
+    width: 55%;
 }
+
+.g-form__item {
+    display: flex;
+}
+
+.g-buttom__wrap {}

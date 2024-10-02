@@ -1,0 +1,21 @@
+@import '../../foundations/var.scss';
+
+.form__item__required {
+    margin-right: 2.1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: red;
+    color: white;
+}
+
+.c-form__item__label {
+    padding-right: 9.3rem;
+}
+
+dd p {display: flex;}
+
+.c-autofill__btn {
+    display: flex;
+    margin-left: 1.8rem;
+    
+}
