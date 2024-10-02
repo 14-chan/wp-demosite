@@ -1019,6 +1019,16 @@ footer
   font-size: 2.2rem;
 }
 
+/*=========================
+contactフォーム
+=========================*/
+.c-contact__ttl {
+  text-align: center;
+  margin-top: 15rem;
+  font: var(--font-outfit);
+  font-size: 3.2rem;
+}
+
 /*レスポンシブ用*/
 :root {
   --color-main: #17339C;
@@ -1577,6 +1587,47 @@ footer
 
 .g-post__news {
   margin-top: 10rem;
+}
+
+/*レスポンシブ用*/
+:root {
+  --color-main: #17339C;
+  --color-txt: #000;
+  --color-white: #ffffff;
+  --color-blue: #1877f2;
+  --color-paleblue: #ccdcfe;
+  --color-lightblue: #2ea7e0;
+  --color-yellow: #ffdc26;
+  --color-navy: #213378;
+  --color-thinblue: #E8F8FF;
+  --color-gray: #EEE;
+}
+
+:root {
+  --font-main: "Noto Sans JP", sans-serif;
+  --font-en: "Roboto", sans-serif;
+  --font-point: "Noto Sans JP", sans-serif;
+  --font-point02: "Noto Sans JP", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+:root {
+  --default-margin: 1.6rem;
+  --margin-xs: calc(var(--default-margin) / 4);
+  --margin-s: calc(var(--default-margin) / 2);
+  --margin-m: var(--default-margin);
+  --margin-l: calc(var(--default-margin) * 1.5);
+  --margin-2l: calc(var(--default-margin) * 2);
+  --margin-3l: calc(var(--default-margin) * 3);
+  --margin-4l: calc(var(--default-margin) * 4);
+  --margin-5l: calc(var(--default-margin) * 5);
+  --margin-6l: calc(var(--default-margin) * 6);
+}
+
+.g-contactform {
+  margin-left: 23.7rem;
+  margin-right: 23.7rem;
 }
 
 /*レスポンシブ用*/
