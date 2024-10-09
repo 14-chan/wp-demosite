@@ -3,7 +3,7 @@
     <!--お名前input-->
     <div class="g-form__item">
         <dt>
-        <p><label class="c-form__item__label">
+        <p class="c-form__item"><label class="c-form__item__label">
             <span class="form__item__required">必須</span>お名前
         </label></p>
         </dt>
@@ -16,7 +16,7 @@
     <!--ふりがなinput-->
     <div class="g-form__item">
         <dt>
-        <p><label class="c-form__item__label">
+        <p class="c-form__item"><label class="c-form__item__label">
             <span class="form__item__required">必須</span>ふりがな
         </label></p>
         </dt>
@@ -29,7 +29,7 @@
     <!--電話input-->
     <div class="g-form__item">
         <dt>
-        <p><label class="c-form__item__label">
+        <p class="c-form__item"><label class="c-form__item__label">
             <span class="form__item__required">必須</span>電話番号
         </label></p>
         </dt>
@@ -42,17 +42,20 @@
     <!--郵便番号-->
     <div class="g-form__item">
         <dt>
-        <p><label class="c-form__item__label">郵便番号</label></p>
+            <p class="c-form__item"><label class="c-form__item__label">郵便番号</label></p>
         </dt>
-        <dd>
-        <input type="text" name="your_post1" id="postcode1" class="p-postal-code" size="3" maxlength="3"> - <input type="text" name="your_post2" id="postcode2" class="p-postal-code" size="4" maxlength="4">
-        <button type="button" class="c-autofill__btn" id="auto-fill-address">住所自動入力</button>
+        <dd class="g-yubin__flexbox">
+            <span class="c-postcode__symbol">〒</span>
+            <input type="text" name="your_post1" id="postcode1" class="c-postalcode1" size="3" maxlength="3">
+            <span class="c-dash">ー</span>
+            <input type="text" name="your_post2" id="postcode2" class="c-postalcode2" size="4" maxlength="4">
+            <button type="button" class="c-autofill__btn" id="auto-fill-address">住所自動入力</button>
         </dd>
     </div>
     <!--住所-->
     <div class="g-form__item">
         <dt>
-        <p><label class="c-form__item__label">住所</label></p>
+        <p class="c-form__item"><label class="c-form__item__label">住所</label></p>
         </dt>
         <dd>
         <input type="text" name="your_address" id="address" class="p-region p-locality p-street-address p-extended-address">
@@ -61,17 +64,17 @@
     <!--メッセージ-->
     <div class="g-form__item">
         <dt>
-        <p><label class="c-form__item__label isMsg">
+        <p class="c-form__item"><label class="c-form__item__label isMsg">
             <span class="form__item__required">必須</span>メッセージ</label></p>
         </dt>
         <dd>
         <span class="wpcf7-form-control-wrap textarea-xxx">
-            <textarea name="textarea-xxx" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
+            <textarea name="textarea-xxx" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
         </span>
         </span>
     </div>
     <!--送信ボタン-->
-    <div class"g-button__wrap">
+    <div class="g-button__wrap">
         <input type="submit" value="送信する" class="wpcf7-form-control wpcf7-sumbit">
         <span class="ajax-loader"></span>
     </div>  

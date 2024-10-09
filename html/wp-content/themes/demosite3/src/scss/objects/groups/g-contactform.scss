@@ -8,5 +8,27 @@
 .g-form__item {
     display: flex;
 }
+.g-form__item:not(:last-child) {
+}
 
-.g-buttom__wrap {}
+.g-form__item:not(:first-child) {
+    padding-top: 4.8rem;
+}
+
+.g-form__item:nth-child(4) {
+    padding-left: 8rem;
+}
+
+.g-form__item:nth-child(5) {
+    padding-left: 8rem;
+}
+
+.g-yubin__flexbox {
+    display: flex;
+    align-items: center;
+}
+
+.g-button__wrap {
+    text-align: center;
+    margin-top: 7.4rem;
+}

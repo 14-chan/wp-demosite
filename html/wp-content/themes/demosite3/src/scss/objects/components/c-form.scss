@@ -8,14 +8,85 @@
     color: white;
 }
 
+.c-form__item {
+    margin-top: 0.5rem;
+}
+
 .c-form__item__label {
     padding-right: 9.3rem;
 }
 
-dd p {display: flex;}
+.g-form__item:nth-child(1) .c-form__item__label {
+    padding-right: 10.5rem;
+}
+.g-form__item:nth-child(5) .c-form__item__label {
+    padding-right: 12.1rem;
+}
+.g-form__item:nth-child(6) .c-form__item__label {
+    padding-right: 8rem;
+}
+
+.c-postcode__symbol {
+    font: var(--font-outfit);
+    font-size: 1.4rem;
+    padding-right: 1.2rem;
+}
+
+.c-dash {
+    padding-left: 1.3rem;
+    padding-right: 1.2rem;
+    font: var(--font-outfit);
+    font-size: 1.4rem;
+}
 
 .c-autofill__btn {
-    display: flex;
     margin-left: 1.8rem;
-    
+    padding: 0.7rem 1.6rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
+
+/*==============
+テキストボックス
+==============*/
+.wpcf7-form-control.wpcf7-text {
+    width: 39.1rem; 
+    height: 4.1rem; 
+}
+.wpcf7-form-control.wpcf7-tel {
+    width: 39.1rem;
+    height: 4.1rem;
+}
+.c-postalcode1 {
+    width: 6.7rem;
+    height: 4.1rem;
+}
+.c-postalcode2 {
+    width: 11rem;
+    height: 4.1rem;
+}
+.p-region.p-locality.p-street-address.p-extended-address {
+    width: 39.1rem;
+    height: 4.1rem;
+}
+.wpcf7-form-control.wpcf7-textarea {
+    width: 39.1rem;
+    height: 19.7rem;
+}
+.wpcf7-form-control.wpcf7-sumbit {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 2rem 7rem 2rem 7rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+.wpcf7-submit:hover {
+    background-color: #d3d3d3;
+}
+
+
+
