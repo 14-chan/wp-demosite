@@ -7,6 +7,8 @@ $spl: 710px;
 $spm: 710px;
 $sp: 540px;
 $mv-news: 1035px;
+$mv-contact: 1150px;
+$mv-contact2: 915px;
 
 @mixin pcl {
     @media screen and (max-width: ($pcl)) {
@@ -35,6 +37,16 @@ $mv-news: 1035px;
 }
 @mixin mv-news {
     @media screen and (max-width: ($mv-news)) {
+        @content;
+    }
+}
+@mixin mv-contact {
+    @media screen and (max-width: ($mv-contact)) {
+        @content;
+    }
+}
+@mixin mv-contact2 {
+    @media screen and (max-width: ($mv-contact2)) {
         @content;
     }
 }

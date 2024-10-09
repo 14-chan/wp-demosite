@@ -1163,6 +1163,11 @@ contactフォーム
 .c-form__item {
   margin-top: 0.5rem;
 }
+@media screen and (max-width: 1150px) {
+  .c-form__item {
+    padding-bottom: 1rem;
+  }
+}
 
 .c-form__item__label {
   padding-right: 9.3rem;
@@ -1171,11 +1176,9 @@ contactフォーム
 .g-form__item:nth-child(1) .c-form__item__label {
   padding-right: 10.5rem;
 }
-
 .g-form__item:nth-child(5) .c-form__item__label {
   padding-right: 12.1rem;
 }
-
 .g-form__item:nth-child(6) .c-form__item__label {
   padding-right: 8rem;
 }
@@ -1194,7 +1197,7 @@ contactフォーム
 }
 
 .c-autofill__btn {
-  margin-left: 1.8rem;
+  margin-left: 1.3rem;
   padding: 0.7rem 1.6rem;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
@@ -1205,14 +1208,14 @@ contactフォーム
 /*==============
 テキストボックス
 ==============*/
-.wpcf7-form-control.wpcf7-text {
+.wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-tel {
   width: 39.1rem;
   height: 4.1rem;
 }
-
-.wpcf7-form-control.wpcf7-tel {
-  width: 39.1rem;
-  height: 4.1rem;
+@media screen and (max-width: 915px) {
+  .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-tel {
+    width: 100%;
+  }
 }
 
 .c-postalcode1 {
@@ -1229,16 +1232,25 @@ contactフォーム
   width: 39.1rem;
   height: 4.1rem;
 }
+@media screen and (max-width: 915px) {
+  .p-region.p-locality.p-street-address.p-extended-address {
+    width: 100%;
+  }
+}
 
 .wpcf7-form-control.wpcf7-textarea {
   width: 39.1rem;
   height: 19.7rem;
 }
-
+@media screen and (max-width: 915px) {
+  .wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+  }
+}
 .wpcf7-form-control.wpcf7-sumbit {
   background-color: #e0e0e0;
   border: none;
-  padding: 2rem 7rem 2rem 7rem;
+  padding: 1.5rem 8rem 1.5rem 8rem;
   font-size: 1.6rem;
   cursor: pointer;
   text-align: center;
@@ -1763,26 +1775,41 @@ contactフォーム
   margin: 0 auto;
   width: 55%;
 }
+@media screen and (max-width: 1150px) {
+  .g-contactform {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1035px) {
+  .g-contactform {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 915px) {
+  .g-contactform {
+    width: 55%;
+  }
+}
 
 .g-form__item {
   display: flex;
 }
-
 .g-form__item:not(:first-child) {
   padding-top: 4.8rem;
 }
-
-.g-form__item:nth-child(4) {
+.g-form__item:nth-child(4), .g-form__item:nth-child(5) {
   padding-left: 8rem;
 }
-
-.g-form__item:nth-child(5) {
-  padding-left: 8rem;
-}
-
-.g-yubin__flexbox {
-  display: flex;
+.g-form__item:not(:nth-child(6)) {
   align-items: center;
+}
+@media screen and (max-width: 915px) {
+  .g-form__item {
+    display: inline;
+  }
+  .g-form__item:not(:first-child) {
+    padding-top: 2rem;
+  }
 }
 
 .g-button__wrap {

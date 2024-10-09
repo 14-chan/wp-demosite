@@ -1,34 +1,43 @@
-@import '../../foundations/var.scss';
+@import "../../foundations/var.scss";
 
 .g-contactform {
-    margin: 0 auto;
+  margin: 0 auto;
+  width: 55%;
+
+  @include mv-contact {
+    width: 60%;
+  }
+  @include mv-news {
+    width: 70%;
+  }
+  @include mv-contact2 {
     width: 55%;
+  }
 }
 
 .g-form__item {
-    display: flex;
-}
-.g-form__item:not(:last-child) {
-}
+  display: flex;
 
-.g-form__item:not(:first-child) {
+  &:not(:first-child) {
     padding-top: 4.8rem;
-}
+  }
 
-.g-form__item:nth-child(4) {
+  &:nth-child(4), &:nth-child(5) {
     padding-left: 8rem;
-}
+  }
 
-.g-form__item:nth-child(5) {
-    padding-left: 8rem;
-}
-
-.g-yubin__flexbox {
-    display: flex;
+  &:not(:nth-child(6)) {
     align-items: center;
+  }
+
+  @include mv-contact2 {
+    display: inline;
+  }
+
 }
+
 
 .g-button__wrap {
-    text-align: center;
-    margin-top: 7.4rem;
+  text-align: center;
+  margin-top: 7.4rem;
 }

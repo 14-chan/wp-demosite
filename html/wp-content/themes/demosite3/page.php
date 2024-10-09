@@ -5,26 +5,65 @@
     <?php the_content(); ?>
     </div>
 
-<!-- AjaxZip3のスクリプトを読み込む -->
-<script src="https://cdn.jsdelivr.net/npm/yubinbango@3.0.1/dist/yubinbango.js"></script>
 
 <script>
     document.getElementById('auto-fill-address').addEventListener('click', function() {
         var postcode1 = document.getElementById('postcode1').value;
         var postcode2 = document.getElementById('postcode2').value;
         var postcode = postcode1 + postcode2; // 郵便番号を結合
+
+        console.log('郵便番号: ' + postcode);
         
         if (postcode.length === 7) { // 郵便番号が7桁であることを確認
-            // YubinBangoライブラリを使用して住所を自動入力
-            new YubinBango.MicroformatDom().populate({
-                "postalcode": postcode,
-                "address": "your_address"
-            });
         } else {
             alert('正しい郵便番号を入力してください');
         }
     });
 </script>
 
+<script>
+    (function() {
+    //該当フォーム
+    var hadr = document.querySelector(".h-adr"), 
+        cancelFlag = true;
+
+    //イベントをキャンセルするリスナ
+    var onKeyupCanceller = function(e) {
+        if(cancelFlag){
+            e.stopImmediatePropagation();
+        }
+        return false;
+    };
+
+    // 郵便番号の入力欄
+    var postalcode = hadr.querySelectorAll(".p-postal-code"),
+        postalField = postalcode[postalcode.length - 1];
+
+    //通常の挙動をキャンセルできるようにイベントを追加
+    postalField.addEventListener("keyup", onKeyupCanceller, false);
+
+    //ボタンクリック時
+    var btn = hadr.querySelector(".c-autofill__btn");
+    btn.addEventListener("click", function(e) {
+        //キャンセルを解除
+        cancelFlag = false;
+
+        //発火
+        let event;
+        if (typeof Event === "function") {
+            event = new Event("keyup");
+        } else {
+            event = document.createEvent("Event");
+            event.initEvent("keyup", true, true);
+        }
+        postalField.dispatchEvent(event);
+
+        //キャンセルを戻す
+        cancelFlag = true;
+    });
+})();
+</script>
+
+<div class="l-container">
 
 <?php get_footer(); ?>

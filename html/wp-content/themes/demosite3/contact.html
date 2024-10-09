@@ -1,4 +1,4 @@
-<div class="g-contactform">
+<input type="hidden" class="p-country-name" value="Japan">
 <dl class="g-form__table">
     <!--お名前input-->
     <div class="g-form__item">
@@ -9,7 +9,7 @@
         </dt>
         <dd>
         <span class="wpcf7-form-control-wrap text-xxx">
-            <input type="text" name="your_name" class="wpcf7-form-control wpcf7-text" aria-invalid="false">
+            [text* your-name size:50]
         </span>
         </dd>
     </div>
@@ -22,7 +22,7 @@
         </dt>
         <dd>
         <span class="wpcf7-form-control-wrap text-xxx">
-            <input type="text" name="your_name" class="wpcf7-form-control wpcf7-text" aria-invalid="false">
+            [text* your-name size:50]
         </span>
         </dd>
     </div>
@@ -35,7 +35,7 @@
         </dt>
         <dd>
         <span class="wpcf7-form-control-wrap tel-xxx">
-            <input type="tel" name="tel" class="wpcf7-form-control wpcf7-tel" aria-invalid="false">
+            [tel* tel size:50]
         </span>
         </dd>
     </div>
@@ -46,9 +46,9 @@
         </dt>
         <dd class="g-yubin__flexbox">
             <span class="c-postcode__symbol">〒</span>
-            <input type="text" name="your_post1" id="postcode1" class="c-postalcode1" size="3" maxlength="3">
+            <input type="text" name="your-post1" id="postcode1" class="p-postal-code c-postalcode1" size="3" maxlength="3">
             <span class="c-dash">ー</span>
-            <input type="text" name="your_post2" id="postcode2" class="c-postalcode2" size="4" maxlength="4">
+            <input type="text" name="your-post2" id="postcode2" class="p-postal-code c-postalcode2" size="4" maxlength="4">
             <button type="button" class="c-autofill__btn" id="auto-fill-address">住所自動入力</button>
         </dd>
     </div>
@@ -58,7 +58,7 @@
         <p class="c-form__item"><label class="c-form__item__label">住所</label></p>
         </dt>
         <dd>
-        <input type="text" name="your_address" id="address" class="p-region p-locality p-street-address p-extended-address">
+        [text text id:address class:p-region class:p-locality class:p-street-address class:p-extended-address size:50]
         </dd>
     </div>     
     <!--メッセージ-->
@@ -69,7 +69,7 @@
         </dt>
         <dd>
         <span class="wpcf7-form-control-wrap textarea-xxx">
-            <textarea name="textarea-xxx" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
+            [textarea* textarea-xxx size:80x]
         </span>
         </span>
     </div>
@@ -79,4 +79,3 @@
         <span class="ajax-loader"></span>
     </div>  
 </dl>
-</div>
