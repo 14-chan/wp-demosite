@@ -16,21 +16,43 @@
   }
 }
 
-.c-form__item__label {
-  padding-right: 9.3rem;
+.c-form__name__item {
+  padding-right: 10.5rem;
 }
 
-.g-form__item {
-  &:nth-child(1) .c-form__item__label {
-    padding-right: 10.5rem;
-  }
+.c-form__huri__item {
+  padding-right: 9.3rem;
 
-  &:nth-child(5) .c-form__item__label {
-    padding-right: 12.1rem;
+  @include mv-contact {
+    padding-top: 4rem;
   }
+}
 
-  &:nth-child(6) .c-form__item__label {
-    padding-right: 8rem;
+.c-form__tel__item {
+  padding-right: 9.3rem;
+
+  @include mv-contact {
+    padding-top: 4rem;
+  }
+}
+
+.c-form__yubin__item {
+  padding-right: 9.3rem;
+
+  @include mv-contact {
+    padding-top: 2rem;
+  }
+}
+
+.c-form__address__item {
+  padding-right: 12.1rem;
+}
+
+.c-form__msg__item {
+  padding-right: 8rem;
+
+  @include mv-contact {
+    padding-top: 4rem;
   }
 }
 
@@ -54,6 +76,12 @@
   border: 1px solid #ccc;
   font-size: 1.4rem;
   cursor: pointer;
+
+  @include pcm {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
 }
 
 /*==============

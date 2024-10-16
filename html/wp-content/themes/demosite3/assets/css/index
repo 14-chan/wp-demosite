@@ -1169,18 +1169,48 @@ contactフォーム
   }
 }
 
-.c-form__item__label {
-  padding-right: 9.3rem;
-}
-
-.g-form__item:nth-child(1) .c-form__item__label {
+.c-form__name__item {
   padding-right: 10.5rem;
 }
-.g-form__item:nth-child(5) .c-form__item__label {
+
+.c-form__huri__item {
+  padding-right: 9.3rem;
+}
+@media screen and (max-width: 1150px) {
+  .c-form__huri__item {
+    padding-top: 4rem;
+  }
+}
+
+.c-form__tel__item {
+  padding-right: 9.3rem;
+}
+@media screen and (max-width: 1150px) {
+  .c-form__tel__item {
+    padding-top: 4rem;
+  }
+}
+
+.c-form__yubin__item {
+  padding-right: 9.3rem;
+}
+@media screen and (max-width: 1150px) {
+  .c-form__yubin__item {
+    padding-top: 2rem;
+  }
+}
+
+.c-form__address__item {
   padding-right: 12.1rem;
 }
-.g-form__item:nth-child(6) .c-form__item__label {
+
+.c-form__msg__item {
   padding-right: 8rem;
+}
+@media screen and (max-width: 1150px) {
+  .c-form__msg__item {
+    padding-top: 4rem;
+  }
 }
 
 .c-postcode__symbol {
@@ -1203,6 +1233,13 @@ contactフォーム
   border: 1px solid #ccc;
   font-size: 1.4rem;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .c-autofill__btn {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
 }
 
 /*==============
@@ -1797,19 +1834,22 @@ contactフォーム
 .g-form__item:not(:first-child) {
   padding-top: 4.8rem;
 }
-.g-form__item:nth-child(4), .g-form__item:nth-child(5) {
-  padding-left: 8rem;
-}
-.g-form__item:not(:nth-child(6)) {
-  align-items: center;
-}
 @media screen and (max-width: 915px) {
   .g-form__item {
     display: inline;
   }
-  .g-form__item:not(:first-child) {
-    padding-top: 2rem;
-  }
+}
+
+.g-form__yubin {
+  padding-left: 8rem;
+}
+
+.g-form__address {
+  padding-left: 8rem;
+}
+
+.g-form__msg {
+  align-items: center;
 }
 
 .g-button__wrap {
