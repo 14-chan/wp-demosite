@@ -11,7 +11,7 @@
 .c-form__item {
   margin-top: 0.5rem;
 
-  @include mv-contact {
+  @include mv-contact2 {
     padding-bottom: 1rem;
   }
 }
@@ -23,7 +23,7 @@
 .c-form__huri__item {
   padding-right: 9.3rem;
 
-  @include mv-contact {
+  @include mv-contact2 {
     padding-top: 4rem;
   }
 }
@@ -31,7 +31,7 @@
 .c-form__tel__item {
   padding-right: 9.3rem;
 
-  @include mv-contact {
+  @include mv-contact2 {
     padding-top: 4rem;
   }
 }
@@ -39,7 +39,7 @@
 .c-form__yubin__item {
   padding-right: 9.3rem;
 
-  @include mv-contact {
+  @include mv-contact2 {
     padding-top: 2rem;
   }
 }
@@ -51,7 +51,7 @@
 .c-form__msg__item {
   padding-right: 8rem;
 
-  @include mv-contact {
+  @include mv-contact2 {
     padding-top: 4rem;
   }
 }
@@ -60,6 +60,10 @@
   font: var(--font-outfit);
   font-size: 1.4rem;
   padding-right: 1.2rem;
+
+  @include mv-contact2 {
+    padding: 0;
+  }
 }
 
 .c-dash {
@@ -67,6 +71,10 @@
   padding-right: 1.2rem;
   font: var(--font-outfit);
   font-size: 1.4rem;
+
+  @include mv-contact2 {
+    padding: 0;
+  }
 }
 
 .c-autofill__btn {
@@ -77,8 +85,8 @@
   font-size: 1.4rem;
   cursor: pointer;
 
-  @include pcm {
-    display: flex;
+  @include sp {
+    flex-wrap: nowrap;
     margin-top: 2rem;
     margin-left: 0;
   }
@@ -92,6 +100,7 @@
   &.wpcf7-text, &.wpcf7-tel {
     width: 39.1rem;
     height: 4.1rem;
+    font-size: 1.6rem;
     
     @include mv-contact2 {
         width: 100%;
@@ -100,18 +109,22 @@
 }
 
 .c-postalcode1 {
-  width: 6.7rem;
+  width: 100%;
   height: 4.1rem;
+  font-size: 1.6rem;
 }
 
 .c-postalcode2 {
-  width: 11rem;
+  width: 100%;
   height: 4.1rem;
+  margin-left: 4.1rem;
+  font-size: 1.6rem;
 }
 
 .p-region.p-locality.p-street-address.p-extended-address {
   width: 39.1rem;
   height: 4.1rem;
+  font-size: 1.6rem;
   
   @include mv-contact2 {
     width: 100%;
@@ -122,6 +135,7 @@
   &.wpcf7-textarea {
     width: 39.1rem;
     height: 19.7rem;
+    font-size: 1.6rem;
     
     @include mv-contact2 {
         width: 100%;
@@ -136,6 +150,7 @@
     cursor: pointer;
     text-align: center;
     display: inline-block;
+    font-size: 1.6rem;
   }
 }
 

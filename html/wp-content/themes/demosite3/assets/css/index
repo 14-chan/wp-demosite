@@ -1218,12 +1218,22 @@ contactフォーム
   font-size: 1.4rem;
   padding-right: 1.2rem;
 }
+@media screen and (max-width: 1150px) {
+  .c-postcode__symbol {
+    padding: 0;
+  }
+}
 
 .c-dash {
   padding-left: 1.3rem;
   padding-right: 1.2rem;
   font: var(--font-outfit);
   font-size: 1.4rem;
+}
+@media screen and (max-width: 1150px) {
+  .c-dash {
+    padding: 0;
+  }
 }
 
 .c-autofill__btn {
@@ -1248,6 +1258,7 @@ contactフォーム
 .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-tel {
   width: 39.1rem;
   height: 4.1rem;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 915px) {
   .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-tel {
@@ -1256,18 +1267,21 @@ contactフォーム
 }
 
 .c-postalcode1 {
-  width: 6.7rem;
+  width: auto;
   height: 4.1rem;
+  font-size: 1.6rem;
 }
 
 .c-postalcode2 {
-  width: 11rem;
+  width: 9.8rem;
   height: 4.1rem;
+  font-size: 1.6rem;
 }
 
 .p-region.p-locality.p-street-address.p-extended-address {
   width: 39.1rem;
   height: 4.1rem;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 915px) {
   .p-region.p-locality.p-street-address.p-extended-address {
@@ -1278,6 +1292,7 @@ contactフォーム
 .wpcf7-form-control.wpcf7-textarea {
   width: 39.1rem;
   height: 19.7rem;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 915px) {
   .wpcf7-form-control.wpcf7-textarea {
@@ -1292,6 +1307,7 @@ contactフォーム
   cursor: pointer;
   text-align: center;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 .wpcf7-submit:hover {
@@ -1811,6 +1827,7 @@ contactフォーム
 .g-contactform {
   margin: 0 auto;
   width: 55%;
+  white-space: nowrap;
 }
 @media screen and (max-width: 1150px) {
   .g-contactform {

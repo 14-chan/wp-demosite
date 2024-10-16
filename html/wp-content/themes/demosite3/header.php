@@ -17,7 +17,7 @@
                         <li class="c-list__header__item"><a class="c-nav__header__link" href="">About</a></li>
                         <li class="c-list__header__item"><a class="c-nav__header__link" href="/works__main.html">Works</a></li>
                         <li class="c-list__header__item"><a class="c-nav__header__link" href="<?php echo get_category_link(get_cat_ID('すべて')); ?>">News</a></li>
-                        <li class="c-list__header__item"><a class="c-nav__header__link" href="/contact.html">Contact</a></li>
+                        <li class="c-list__header__item"><a class="c-nav__header__link" href="/contact/">Contact</a></li>
                     </ul>
                 </nav>
                 <button class="g-hamb-btn__header c-hamb__btn" id="js__hamburger">

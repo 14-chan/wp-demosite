@@ -60,6 +60,13 @@ module.exports = {
             filename: 'css/[name]'// 出力ファイル名を相対パスで指定（[name]にはentry:で指定したキーが入る）
         })
     ],
+    // 開発用サーバーの設定 (オプション)
+    devServer: {
+        static: path.resolve(__dirname, './assets/'),
+        compress: true,
+        port: 8080,
+        hot: true, 
+    }
     // node_modules を監視（watch）対象から除外
     watchOptions: {
         ignored: /node_modules/

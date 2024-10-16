@@ -3,6 +3,7 @@
 .g-contactform {
   margin: 0 auto;
   width: 55%;
+  white-space: nowrap;
 
   @include mv-contact {
     width: 60%;
@@ -29,16 +30,16 @@
 
 .g-form__yubin {
   padding-left: 8rem;
+  align-items: center;
+}
+
+.g-yubin__flexbox {
+  display: flex;
 }
 
 .g-form__address {
   padding-left: 8rem;
 }
-
-.g-form__msg {
-  align-items: center;
-}
-
 
 .g-button__wrap {
   text-align: center;
