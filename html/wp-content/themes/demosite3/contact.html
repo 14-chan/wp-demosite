@@ -1,7 +1,7 @@
 <input type="hidden" class="p-country-name" value="Japan">
-<dl class="g-form__table">
+<div class="g-form__table">
     <!--お名前input-->
-    <div class="g-form__item g-form__name">
+    <dl class="g-form__item g-form__name">
         <dt>
         <p class="c-form__item c-form__name__item"><label class="c-form__item__label">
             <span class="form__item__required">必須</span>お名前
@@ -12,9 +12,9 @@
             [text* your-name size:50]
         </span>
         </dd>
-    </div>
+    </dl>
     <!--ふりがなinput-->
-    <div class="g-form__item g-form__huri">
+    <dl class="g-form__item g-form__huri">
         <dt>
         <p class="c-form__item c-form__huri__item"><label class="c-form__item__label">
             <span class="form__item__required">必須</span>ふりがな
@@ -25,9 +25,9 @@
             [text* your-name size:50]
         </span>
         </dd>
-    </div>
+    </dl>
     <!--電話input-->
-    <div class="g-form__item g-form__tel">
+    <dl class="g-form__item g-form__tel">
         <dt>
         <p class="c-form__item c-form__tel__item"><label class="c-form__item__labell">
             <span class="form__item__required">必須</span>電話番号
@@ -38,35 +38,33 @@
             [tel* tel size:50]
         </span>
         </dd>
-    </div>
+    </dl>
     <!--郵便番号-->
-    <div class="g-form__item g-form__yubin">
+    <dl class="g-form__item g-form__yubin">
         <dt>
             <p class="c-form__item c-form__yubin__item"><label class="c-form__item__label">郵便番号</label></p>
         </dt>
-        <dt class="g-yubin__flexbox">
-            <p>
+        <dd class="g-yubin__flexbox">
+            <div class="g-yubin__container">
             <span class="c-postcode__symbol">〒</span>
             <input type="text" name="your-post1" id="postcode1" class="p-postal-code c-postalcode1" size="3" maxlength="3">
             <span class="c-dash">ー</span>
-            </p>
-            <p>
             <input type="text" name="your-post2" id="postcode2" class="p-postal-code c-postalcode2" size="4" maxlength="4">
-            </p>
+            </div>
             <button type="button" class="c-autofill__btn" id="auto-fill-address">住所自動入力</button>
-        </dt>
-    </div>
+        </dd>
+    </dl>
     <!--住所-->
-    <div class="g-form__item g-form__address">
+    <dl class="g-form__item g-form__address">
         <dt>
         <p class="c-form__item c-form__address__item"><label class="c-form__item__label">住所</label></p>
         </dt>
         <dd>
         [text text id:address class:p-region class:p-locality class:p-street-address class:p-extended-address size:50]
         </dd>
-    </div>     
+    </dl>     
     <!--メッセージ-->
-    <div class="g-form__item g-form__msg">
+    <dl class="g-form__item g-form__msg">
         <dt>
         <p class="c-form__item c-form__msg__item"><label class="c-form__item__label">
             <span class="form__item__required">必須</span>メッセージ</label></p>
@@ -76,10 +74,12 @@
             [textarea* textarea-xxx size:80x]
         </span>
         </span>
-    </div>
+    </dl>
     <!--送信ボタン-->
-    <div class="g-button__wrap">
-        <input type="submit" value="送信する" class="wpcf7-form-control wpcf7-sumbit">
-        <span class="ajax-loader"></span>
-    </div>  
-</dl>
+    <dl>
+        <dt class="g-button__wrap">
+            <input type="submit" value="送信する" class="wpcf7-form-control wpcf7-sumbit">
+            <span class="ajax-loader"></span>
+        </dt> 
+    </dl> 
+</div>

@@ -35,6 +35,19 @@
 
 .g-yubin__flexbox {
   display: flex;
+
+  @include spl {
+    display: block;
+  }
+}
+
+.g-yubin__container {
+  display: inline-block;
+  align-items: center;
+
+  @include spl {
+    display: block;
+  }
 }
 
 .g-form__address {

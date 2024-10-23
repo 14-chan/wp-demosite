@@ -1163,7 +1163,7 @@ contactフォーム
 .c-form__item {
   margin-top: 0.5rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-form__item {
     padding-bottom: 1rem;
   }
@@ -1176,7 +1176,7 @@ contactフォーム
 .c-form__huri__item {
   padding-right: 9.3rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-form__huri__item {
     padding-top: 4rem;
   }
@@ -1185,7 +1185,7 @@ contactフォーム
 .c-form__tel__item {
   padding-right: 9.3rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-form__tel__item {
     padding-top: 4rem;
   }
@@ -1194,7 +1194,7 @@ contactフォーム
 .c-form__yubin__item {
   padding-right: 9.3rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-form__yubin__item {
     padding-top: 2rem;
   }
@@ -1207,7 +1207,7 @@ contactフォーム
 .c-form__msg__item {
   padding-right: 8rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-form__msg__item {
     padding-top: 4rem;
   }
@@ -1218,7 +1218,7 @@ contactフォーム
   font-size: 1.4rem;
   padding-right: 1.2rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-postcode__symbol {
     padding: 0;
   }
@@ -1230,7 +1230,7 @@ contactフォーム
   font: var(--font-outfit);
   font-size: 1.4rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 915px) {
   .c-dash {
     padding: 0;
   }
@@ -1244,9 +1244,9 @@ contactフォーム
   font-size: 1.4rem;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   .c-autofill__btn {
-    display: flex;
+    flex-wrap: nowrap;
     margin-top: 2rem;
     margin-left: 0;
   }
@@ -1267,14 +1267,15 @@ contactフォーム
 }
 
 .c-postalcode1 {
-  width: auto;
+  width: 100%;
   height: 4.1rem;
   font-size: 1.6rem;
 }
 
 .c-postalcode2 {
-  width: 9.8rem;
+  width: 100%;
   height: 4.1rem;
+  margin-left: 4.1rem;
   font-size: 1.6rem;
 }
 
@@ -1859,14 +1860,15 @@ contactフォーム
 
 .g-form__yubin {
   padding-left: 8rem;
+  align-items: center;
+}
+
+.g-yubin__flexbox {
+  display: flex;
 }
 
 .g-form__address {
   padding-left: 8rem;
-}
-
-.g-form__msg {
-  align-items: center;
 }
 
 .g-button__wrap {

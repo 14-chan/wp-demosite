@@ -3,7 +3,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
-
 module.exports = {
     // コンパイルモード
     mode: 'production',
@@ -66,7 +65,7 @@ module.exports = {
         compress: true,
         port: 8080,
         hot: true, 
-    }
+    },
     // node_modules を監視（watch）対象から除外
     watchOptions: {
         ignored: /node_modules/

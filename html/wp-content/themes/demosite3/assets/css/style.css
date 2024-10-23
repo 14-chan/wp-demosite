@@ -1234,18 +1234,17 @@ contactフォーム
 }
 
 .c-autofill__btn {
-  margin-left: 1.3rem;
+  margin-left: 6rem;
   padding: 0.7rem 1.6rem;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   font-size: 1.4rem;
   cursor: pointer;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 710px) {
   .c-autofill__btn {
-    flex-wrap: nowrap;
-    margin-top: 2rem;
     margin-left: 0;
+    margin-top: 2rem;
   }
 }
 
@@ -1265,14 +1264,15 @@ contactフォーム
 
 .c-postalcode1 {
   width: 100%;
+  max-width: 6.7rem;
   height: 4.1rem;
   font-size: 1.6rem;
 }
 
 .c-postalcode2 {
   width: 100%;
+  max-width: 11rem;
   height: 4.1rem;
-  margin-left: 4.1rem;
   font-size: 1.6rem;
 }
 
@@ -1862,6 +1862,21 @@ contactフォーム
 
 .g-yubin__flexbox {
   display: flex;
+}
+@media screen and (max-width: 710px) {
+  .g-yubin__flexbox {
+    display: block;
+  }
+}
+
+.g-yubin__container {
+  display: inline-block;
+  align-items: center;
+}
+@media screen and (max-width: 710px) {
+  .g-yubin__container {
+    display: block;
+  }
 }
 
 .g-form__address {
